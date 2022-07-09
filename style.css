@@ -5,7 +5,8 @@
     font-family: sans-serif;
 }
 body{
-    
+    min-height: 100vh;
+    display: grid;
     background-color: hsl(226, 43%, 10%);
    
 }
@@ -14,17 +15,25 @@ body{
    grid-template-columns: auto auto auto auto;
    gap:10px;
    width:850px;
-   position:absolute;
-   top:50%;
-   left:50%;
-   transform:translate(-50%,-50%);
+  margin:auto;
+}
+@media(max-width:820px){
+    .grid-container{
+        display: grid;
+       width: 50%;
+        grid-template-columns: auto;
+        
+        justify-content: center;
+    }
+    
+}
    
 
    
  
                          
     
-}
+
 
 .grid-item1{
     width: 200px;
@@ -59,7 +68,7 @@ body{
     background-color: hsl(348, 100%, 68%);
     position: relative;
     border-radius: 10px;
-    grid-column-start: 4;
+    
 }
 .grid-item5{
     background: url(./images/icon-exercise.svg) no-repeat;
@@ -68,7 +77,7 @@ body{
     background-color: hsl(145, 58%, 55%);
     position: relative;
     border-radius: 10px;
-    grid-column-start: 2;
+    
    
     
 }
