@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    
+    background-color: hsl(226, 43%, 10%);
+   
+}
+.grid-container{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   gap:10px;
+   width:850px;
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+   
+
+   
+ 
+                         
+    
+}
+
+.grid-item1{
+    width: 200px;
+    
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+    
+}
+.grid-item2{
+    background: url(./images/icon-work.svg) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-color: hsl(15, 100%, 70%);
+    position: relative;
+    border-radius: 10px;
+}
+.grid-item3{
+    background: url(./images/icon-play.svg) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-color: hsl(195, 74%, 62%);
+    position: relative;
+    border-radius: 10px;
+}
+.grid-item4{
+    background: url(./images/icon-study.svg) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-color: hsl(348, 100%, 68%);
+    position: relative;
+    border-radius: 10px;
+    grid-column-start: 4;
+}
+.grid-item5{
+    background: url(./images/icon-exercise.svg) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-color: hsl(145, 58%, 55%);
+    position: relative;
+    border-radius: 10px;
+    grid-column-start: 2;
+   
+    
+}
+.grid-item6{
+    background: url(./images/icon-social.svg) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-color: hsl(264, 64%, 52%);
+    position: relative;
+    border-radius: 10px;
+}
+.grid-item7{
+    background: url(./images/icon-self-care.svg) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-color: hsl(43, 84%, 65%);
+    position: relative;
+    border-radius: 10px;
+}
+.profile{
+    background-color: hsl(235, 45%, 61%);
+    border-radius: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.jeremy{
+    width: 70px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.profile-texts{
+    color: white;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+.times{
+  height: 100px;
+  margin-left: 20px;
+   font-family: sans-serif;
+   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+   color: hsl(264, 64%, 52%);
+}
+.daily-text:hover{
+  color:white;
+  cursor: pointer;
+}
+.weekly-text:hover{
+    color:white;
+    cursor: pointer;
+  }
+  .monthly-text:hover{
+    color:white;
+    cursor: pointer;
+  }
+
+   
+    
+
+.work{
+   background-color: hsl(235, 46%, 20%);
+   height: 170px;
+   width: 200px;
+   position: absolute;
+   bottom: 0;
+   border-radius: 10px;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   padding-inline-start: 20px;
+   justify-content: space-around;
+}
+.current-hours-text{
+    font-size: 38px;
+    
+}
+.work:hover{
+    background-color: hsl(235, 45%, 61%);
+
+}
+.active{
+    color:white
+}
